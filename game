@@ -1,0 +1,37 @@
+
+import random
+
+
+
+
+array =  ['rock', 'paper', 'scissor']
+computer = random.choice(array)
+print(f"Computer chooses: {computer}")
+user = random.choice(array)
+print(f"User chooses: {user}")
+
+if computer == "rock":
+    if user == "paper":
+      print("computer wins")
+    else:
+       print("user wins")
+elif computer == "rock":
+    if user == "scissor":
+      print("computer wins")
+    else:
+       print ("userwins")
+
+elif computer == "paper":
+    if user == "scissor":
+        print("user wins")
+    else:
+        print("computer wins")
+elif computer == "rock":
+      if user == "rock":
+          print("tie")
+elif computer == "paper":
+      if user == "paper":
+          print("tie")
+elif computer == "scissors":
+      if user == "scissors":
+          print("tie")
